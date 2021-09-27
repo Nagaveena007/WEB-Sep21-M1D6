@@ -436,16 +436,17 @@ onlyInThisMillennium()
     Write a function called getMovieById which receives an id as a 
     parameter and returns the movie with the given id from the provided movies array.
 */
-/* console.log("EXERCISE 16: \n")
+ console.log("EXERCISE 16: \n")
 function getMovieById(id){
     for(let d=0;d<=movies.length-1;d++){
-        if(movies.imdbID===id){
+        if(id===movies.imdbID){
+            console.log(`${movies.imdbID}`)
+            console.log(movies[d])
 
         }
     }
-    console.log(`${movies.imdbID}`)
 }
-getMovieById(tt0399295) */
+getMovieById(tt0399295) 
 /* EXERCISE 17
     Write a function called sumAllTheYears which returns the sum of
      all the years in which the movies in the provided movies array have been produced.
@@ -466,6 +467,7 @@ sumAllTheYears()
     movies array which contain that string in the title.
 */
 console.log("EXERCISE 18: \n")
+
 function searchByTitle(movieTitle){
     for(let s=0; s<=movies.length-1;s++){
 if(movieTitle===movies.Title[s]){
