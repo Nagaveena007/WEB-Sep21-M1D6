@@ -436,11 +436,16 @@ onlyInThisMillennium()
     Write a function called getMovieById which receives an id as a 
     parameter and returns the movie with the given id from the provided movies array.
 */
-console.log("EXERCISE 16: \n")
-function getMovieById(imdbID){
+/* console.log("EXERCISE 16: \n")
+function getMovieById(id){
+    for(let d=0;d<=movies.length-1;d++){
+        if(movies.imdbID===id){
+
+        }
+    }
     console.log(`${movies.imdbID}`)
 }
-getMovieById(tt0399295)
+getMovieById(tt0399295) */
 /* EXERCISE 17
     Write a function called sumAllTheYears which returns the sum of
      all the years in which the movies in the provided movies array have been produced.
@@ -461,6 +466,15 @@ sumAllTheYears()
     movies array which contain that string in the title.
 */
 console.log("EXERCISE 18: \n")
+function searchByTitle(movieTitle){
+    for(let s=0; s<=movies.length-1;s++){
+if(movieTitle===movies.Title[s]){
+console.log(movies[s])
+}
+    }
+}
+searchByTitle("Lord of War")
+
 /* EXERCISE 19
     Write a function called searchAndDivide which receives a string as a parameter and returns an object;
     this object should contain an array called match, made by all the movies from 
@@ -468,6 +482,7 @@ console.log("EXERCISE 18: \n")
     and another array unmatch with all the remaining ones.
 */
 console.log("EXERCISE 19: \n")
+
 /* EXERCISE 20
    Write a function called "removeIndex" which receives a number as a 
    parameter and returns the provided movies array without the element in the given position.
